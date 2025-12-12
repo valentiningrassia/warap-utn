@@ -10,9 +10,10 @@
 <body>
     <div class="clone">
         <aside>
+            <!-- Apartado nombre, pfp e iconos de interaccion -->
             <header>
                 <div class="profile">
-                    <img class="profile-photo-main" src="img/valentin pf.png" alt="">
+                    <img class="profile-photo-main" src="img/valentin pf.png" alt="foto de perfil de dueño de la cuenta">
                     <h2> Valentin Ingrassia</h2>
                 </div>
                 <div class="profile-buttons">
@@ -26,16 +27,54 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><path d="m24 4l-6 6h-8v8l-6 6l6 6v8h8l6 6l6-6h8v-8l6-6l-6-6v-8h-8z"/><path d="M24 30a6 6 0 1 0 0-12a6 6 0 0 0 0 12Z"/></g></svg>
                     </button>
                 </div>
+                </header>
+
+                <!-- Barra de navegacion de chats -->
                 <div>
-                    <form>
+                    <form class="search-nav">
                         <input type="search">
                     </form>
                 </div>
-            </header>
+                <!-- Apartado chats -->
+                 <ul>
+                    <li class="chat-user-list-1">
+                        <img src="https://placehold.co/100x100" alt="Foto de perfil usuario n1">
+                        <div>
+                            <h3>Maria Lopez</h3>
+                            <p>¿Nos vemos a las 18h?</p>
+                        </div>
+                    </li>
+                    <li class="chat-user-list-2">
+                        <img src="https://placehold.co/100x100" alt="Foto de perfil usuario n1">
+                        <div>
+                            <h3>Grupo: Proyecto</h3>
+                            <p>Push a main -- revisión</p>
+                        </div>
+                    </li>
+                    <li class="chat-user-list-3">
+                        <img src="https://placehold.co/100x100" alt="Foto de perfil usuario n1">
+                        <div>
+                            <h3>Soporte</h3>
+                            <p>Tu factura esta lista</p>
+                        </div>
+                    </li>
+                 </ul>
+                
         </aside>
-
+        <!-- Apartado chat principal -->
         <div class="chat">
-
+            <!-- Apartado usuario chateando en el momento -->
+            <header class="chat-user">
+                <img src="https://placehold.co/100x100" alt="foto perfil usuario actual">
+                <div>
+                    <h2> Maria López</h2>
+                    <p>En Línea</p>
+                </div>
+            </header>
+            <div class="chat-main">
+                <h4>Hola! ¿Queres ir a por un cafe?</h4>
+                <p>14:12</p>
+            </div>
         </div>
     </div>
 </body>
