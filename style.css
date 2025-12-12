@@ -3,15 +3,12 @@
     padding: 0px;
     box-sizing: border-box;
 }
-img{
-    width: 80px;
-}
 
 :root{
     --background-color: #09996b;
-    --asside-color: #151a21;
+    --aside-color: #151a21;
     --chat-form-color: #232d33;
-    --opened-chat-assidecolor:#151c1f;
+    --opened-chat-asidecolor:#151a21;
     --main-chat-color: #edf0f2;
     --footer-chat-color: #edf0f2;
     --owner-message-color:#ddf7c3;
@@ -27,6 +24,60 @@ body{
 .clone{
     background-color: white;
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 360px 1fr;
     height: 100vh;
+}
+
+aside{
+    background-color: var(--aside-color);
+}
+.profile-photo-main{
+    width: 60px;
+    border-radius:50%;
+    gap: 4px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+aside header{
+    display: flex;
+    padding: 10px;
+}
+.profile-buttons{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.profile-buttons button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--aside-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.profile-buttons button svg {
+    width: 25px;
+    height: 25px;;
+    color: white;
+}
+
+.profile h2{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.search-form input{
+    height: 5vh;
+    width: 29vh;
+    padding: 5px;   
 }
