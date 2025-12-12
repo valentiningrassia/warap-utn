@@ -1,7 +1,32 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 img{
     width: 80px;
+}
+
+:root{
+    --background-color: #09996b;
+    --asside-color: #151a21;
+    --chat-form-color: #232d33;
+    --opened-chat-assidecolor:#151c1f;
+    --main-chat-color: #edf0f2;
+    --footer-chat-color: #edf0f2;
+    --owner-message-color:#ddf7c3;
+
+}
+
+
+body{
+    background-color: var(--background-color);
+    padding: 35px;
+}
+
+.clone{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    height: 100vh;
 }
