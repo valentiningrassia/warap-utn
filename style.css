@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.clone{
+    border-radius: 7px;
+    
+}
 :root{
     --background-color: #09996b;
     --aside-color: #151a21;
@@ -26,13 +30,15 @@ body{
     display: grid;
     grid-template-columns: 360px 1fr;
     height: 100vh;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
 }
 
 aside{
     background-color: var(--aside-color);
+    border-radius: 7px 0 0 0;
 }
 .profile-photo-main{
-    width: 60px;
+    width: 70px;
     border-radius:50%;
     gap: 4px;
 }
@@ -41,11 +47,12 @@ aside{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
 }
 
 aside header{
     display: flex;
-    padding: 10px;
+    padding: 15px;
 }
 .profile-buttons{
     display: flex;
@@ -64,6 +71,10 @@ aside header{
     align-items: center;
     cursor: pointer;
 }
+.profile-buttons button:hover{
+    transform: translateY(-4px);
+    transition: 35ms;
+}
 .profile-buttons button svg {
     width: 25px;
     height: 25px;;
@@ -72,8 +83,8 @@ aside header{
 
 .profile h2{
     color: white;
-    font-size: 20px;
-    padding: 10px;
+    font-size: 23px;
+    padding: 8px;
 }
 
 .search-form{
@@ -114,9 +125,85 @@ aside header{
     gap: 10px;
     align-items: center;
     color: white;
+    border-radius: 0 6px 6px 0
 }
 .chat-user-list:hover{
     background-color: var(--chat-form-color);
     cursor: pointer;
     border-left: 3px solid greenyellow ;
 }
+
+.chat-user{
+    background-color:var(--aside-color);
+    border-bottom: var(--chat-form-color);
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 0 7px 0 0;
+    color: white;
+}
+.chat-user img{
+    border-radius: 50%;
+    width: 80px;
+    gap: 3px;
+    display: flex;
+}
+.chat-user p{
+    color: var(--main-chat-color);
+}
+
+
+
+footer{
+background-color: rgb(219, 214, 214);
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 15px;
+align-items: center;
+}
+footer button{
+    padding: 5px;
+}
+
+footer svg{
+    width: 25px;
+    padding: 3px;
+}
+footer form{
+    flex: 1;
+}
+footer form textarea{
+    width: 100%;
+    padding: 10px;
+    resize: none;
+    border-radius: 15px;
+    border: none;
+    margin-top: 4px;
+    align-items: center;
+}
+footer form textarea :focus{
+    outline: #232d33;
+}
+footer .btn-attach{
+    border: none;
+    background-color: transparent;
+    cursor: pointer ;
+}
+footer .btn-send{
+    border: none;
+    background-color: transparent;
+    cursor: pointer ;
+}
+
+.btn-attach :hover{
+    transform: translateY(-2px);
+    color: rgb(196, 190, 190);
+}
+
+.btn-send :hover{
+    transform: translateY(-2px);
+    color: rgb(196, 190, 190);
+}
+
