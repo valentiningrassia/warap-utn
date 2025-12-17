@@ -37,7 +37,7 @@ body{
 
 aside{
     background-color: var(--aside-color);
-    border-radius: 7px 0 0 0;
+    border-radius: 7px 0 0 7px;
 }
 .profile-photo-main{
     width: 70px;
@@ -198,6 +198,7 @@ footer{
     display: flex;
     align-items: center;
     gap: 15px;
+    border-radius: 0 0 7px 0;
 }
 footer button{
     padding: 5px;
