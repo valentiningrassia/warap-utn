@@ -153,15 +153,49 @@ aside header{
     color: var(--main-chat-color);
 }
 
+.messages{
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.chat-main{
+    background-color: var(--main-chat-color);
+    padding: 10px;
+    width: 60%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.message-content{
+    padding: 10px;  
+    gap: 20px;
+}
 
+.main-user{
+    align-self: end;
+    background-color: var(--owner-message-color)
+}
 
+.messages .time{
+align-self: flex-end;
+margin-top: 5px;
+font-size: 12px;
+margin-top: 3px;
+}
+
+.chat{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 footer{
-background-color: rgb(219, 214, 214);
-display: flex;
-align-items: center;
-justify-content: space-between;
-gap: 15px;
-align-items: center;
+    background-color: rgb(219, 214, 214);
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 footer button{
     padding: 5px;
@@ -205,5 +239,15 @@ footer .btn-send{
 .btn-send :hover{
     transform: translateY(-2px);
     color: rgb(196, 190, 190);
+}
+
+
+@media(max-width:880px) {
+    .clone{
+        grid-template-columns: 1fr;
+    }
+    aside{
+        display: none;
+    }
 }
 
