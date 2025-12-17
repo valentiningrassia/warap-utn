@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: var(--font)
 }
 
 .clone{
@@ -17,8 +18,9 @@
     --footer-chat-color: #edf0f2;
     --owner-message-color:#ddf7c3;
 
-}
+    --font: "Roboto", sans-serif;
 
+}
 
 body{
     background-color: var(--background-color);
@@ -29,7 +31,7 @@ body{
     background-color: white;
     display: grid;
     grid-template-columns: 360px 1fr;
-    height: 100vh;
+    height: 90vh;
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
 }
 
