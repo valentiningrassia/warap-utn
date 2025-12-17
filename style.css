@@ -76,8 +76,47 @@ aside header{
     padding: 10px;
 }
 
+.search-form{
+    padding: 15px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .search-form input{
-    height: 5vh;
-    width: 29vh;
-    padding: 5px;   
+    gap: 10px;
+    width: 100%;
+    display: block;
+    background-color: var(--chat-form-color);
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    color: var(--footer-chat-color);
+}
+
+.search-form input:focus{
+    outline: 1px solid grey;
+}
+
+.chats{
+    background-color: var(--aside-color);
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+.chat-user-list img{
+    border-radius: 50%;
+    width: 70px;
+}
+.chat-user-list{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white;
+}
+.chat-user-list:hover{
+    background-color: var(--chat-form-color);
+    cursor: pointer;
+    border-left: 3px solid greenyellow ;
 }
